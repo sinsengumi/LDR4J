@@ -15,7 +15,7 @@ public final class ApiUrl {
     }
 
     /** livedoor ログインページURL */
-    public static final String LIVEDOOR_LOGIN = "http://member.livedoor.com/login/index";
+    public static final String LIVEDOOR_LOGIN = "https://member.livedoor.com/login/index";
 
     /** livedoor Reader のURL */
     public static final String LDR_URI = "http://reader.livedoor.com/";
