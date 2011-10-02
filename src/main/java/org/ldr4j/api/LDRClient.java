@@ -80,8 +80,7 @@ public class LDRClient extends AbstractLDRHttpClient
             response = super.doPost(ApiUrl.LIVEDOOR_LOGIN, params);
 
             // ログインページは、ログイン成功の場合、リダイレクトされる
-            if (response.getStatusCode() == HttpStatus.SC_MOVED_TEMPORARILY
-                    || response.getStatusCode() == HttpStatus.SC_OK) {
+            if (response.getStatusCode() == HttpStatus.SC_MOVED_TEMPORARILY) {
 
                 // livedoor Readerのページに行き、reader_sid（ApiKey）を取得する。
                 LDRHttpResponse response2 = super.doGet(ApiUrl.LDR_URI,
